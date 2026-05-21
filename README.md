@@ -11,7 +11,7 @@
 ## 文件
 
 - `index.html`：主页内容，包含简介、论文、项目、教育经历。
-- `style.css`：页面样式和移动端适配。
+- `stylesheet.css`：页面样式和移动端适配，采用紧凑型学术主页布局。
 - `assets/avatar-placeholder.svg`：占位头像，可替换为个人照片。
 
 ## 本地预览
