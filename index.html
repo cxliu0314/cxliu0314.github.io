@@ -1,226 +1,753 @@
 <!DOCTYPE HTML>
-<html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Changxing Liu</title>
-  <meta name="author" content="Changxing Liu">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Rui Ye</title>
+  
+  <meta name="author" content="Rui Ye">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Changxing Liu's academic homepage">
+  
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+  <style>
+    .scrollable-list {
+        max-height: 215px; /* 调整这个高度以适应7行文本的显示 */
+        overflow-y: auto; /* 显示垂直滚动条 */
+        width: 100%; /* 或根据需要调整宽度 */
+        border: none;
+        margin: 0 auto;
+    }
+    table {
+        width: 100%;
+        border-spacing: 0px;
+        border-collapse: separate;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    ul {
+        list-style-type: disc; /* 取消默认的列表标记 */
+        padding: 20; /* 取消默认的内边距 */
+    }
+    ul li {
+        padding: 2px; /* 添加每一项的内边距 */
+    }
+
+    .tag {
+      display: inline-block;
+      background-color: #0073e6;
+      color: rgb(33, 32, 32);
+      padding: 3px 7px;
+      border-radius: 15px;
+      font-size: 0.8em;
+      margin-right: 5px;
+    }
+
+    .tag-llm {
+      background-color: #ffc8dd;
+    }
+
+    .tag-trust {
+      background-color: #cdb4db;
+    }
+
+    .tag-co {
+      background-color: #bde0fe;
+    }
+
+    .tag-fl {
+      background-color: #a2d2ff;
+    }
+
+    .tag-agents {
+      background-color: #d8f060;
+    }
+  </style>
 </head>
 
 <body>
-  <table class="page-table">
-    <tbody>
-      <tr>
-        <td>
-          <table class="header-table">
-            <tbody>
-              <tr>
-                <td class="intro-cell">
-                  <p class="name">Changxing Liu</p>
-                  <p>
-                    I am with <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University</a>.
-                    My research interests include deep learning, computer vision, agentic AI,
-                    autonomous driving, embodied agents, and collaborative perception.
-                  </p>
-                  <p>
-                    My recent work explores how foundation models, LLM agents, and multimodal
-                    systems can improve editable scene simulation, cooperative driving, and
-                    long-horizon embodied decision making.
-                  </p>
-                  <p class="link-line">
-                    <a href="mailto:your.email@example.com">Email</a> &nbsp;/&nbsp;
-                    <a href="https://scholar.google.com.hk/citations?user=MpUEflgAAAAJ&hl=zh-CN">Google Scholar</a> &nbsp;/&nbsp;
-                    <a href="https://github.com/cxliu0314">GitHub</a> &nbsp;/&nbsp;
-                    <a href="assets/cv.pdf">CV</a>
-                  </p>
-                </td>
-                <td class="photo-cell">
-                  <a href="assets/avatar-placeholder.svg">
-                    <img class="profile-photo" alt="profile photo" src="assets/avatar-placeholder.svg">
-                  </a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <div style="width: 100%;">
+          <p style="text-align:center">
+              <name>Rui Ye / 叶锐</name>
+          </p>
+        </div>
+        <div style="overflow: auto; margin-top: 20px; margin-left: 20px;">
+        
+          <!-- <p style="text-align:center">
+            <name>Rui Ye / 叶锐</name>
+          </p> -->
+          <p>
+            I am a fourth-year PhD candidate at <a href="https://en.sjtu.edu.cn">Shanghai Jiao Tong University (SJTU)</a>, advised by <a href="https://siheng-chen.github.io">Prof. Siheng Chen</a>. I was selected as the <strong>student representative speaker at SJTU's 130th Anniversary</strong>. To date, I have published <strong>14 (co-)first-author papers</strong> in top-tier conferences and journals. Prior to my PhD, I received my Bachelor degree from SJTU with a rank of <strong>1st out of 150</strong>.
+          </p>
+          <div style="float: right; margin-left: 40px; margin-right: 40px; margin-top: 10px; margin-bottom: 10px; width: 40%; max-width: 200px;">
+            <a href="images/ruiye.png">
+              <img style="width: 100%; height: 250px; object-fit: cover;" alt="profile photo" src="images/ruiye.png" class="hoverZoomLink">
+            </a>
+          </div>
+          <p>
+          My research generally centers around <strong>AI Agents and Collaborative AI</strong>, including:
+          <ul style="margin-left: -20px;">
+            <li><b>Agentic LLMs (Reasoning, Tool, Context, etc.):</b>
+              <ul style="padding-left: 25px; list-style-type: square;">
+                <li><strong><a href="https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/">Tongyi DeepResearch</a></strong>, an open-source SOTA agentic LLM with 30B size</li>
+                <li><strong><a href="https://arxiv.org/pdf/2510.24699">AgentFold</a></strong>, a new agentic paradigm with proactive context management</li>
+                <li><strong><a href="https://arxiv.org/pdf/2603.15594">OpenSeeker</a></strong>, a frontier search agent with open-source data & model</li>
+                <li><strong><a href="https://arxiv.org/pdf/2605.04036">OpenSeeker-v2</a></strong>, a ReAct-based search agent (10k SFT, yet, SOTA)</li>
+                <li><strong><a href="https://arxiv.org/pdf/2507.05241">SciMaster</a></strong>, a general-purpose scientific agent (achieves >30% on HLE)</li>
+                <li><strong><a href="https://arxiv.org/pdf/2509.13305">WebSailor-V2</a></strong>, a complete pipeline from data to training for LLM agents</li>
+              </ul>
+            </li>
+            <li><b>LLM-based Multi-Agent Systems (MAS, Workflow):</b> 
+              <ul style="padding-left: 25px; list-style-type: square;">
+                <li><strong><a href="https://arxiv.org/pdf/2503.03686">MAS-GPT</a></strong>, an LLM that can generate executable query-specific MAS</li>
+                <li><strong><a href="https://arxiv.org/pdf/2505.16988">MASLab</a></strong>, a comprehensive codebase for 20+ LLM-based MAS methods</li>
+              </ul>
+            </li>
+            <li>Collaborative Training (Federated Learning):
+              <ul style="padding-left: 25px; list-style-type: square;">
+                <li><a href="https://arxiv.org/pdf/2402.06954">OpenFedLLM</a>, a research codebase for decentralized LLM training
+              </ul>
+            </li>
+          </ul>
+          </p>
+          <p>
+            I am also passionate about turning research into products that serve humans. For example, I have worked on:
+            <li><strong><a href="https://muse.bohrium.com" target="_blank">Muse</a> (Lead, end-to-end project from UI/UX to engineering to algorithm)</strong>. The 'Cursor' for general writing where LLM agents tutor, write, edit, insert citations, compile, fix... Built and shipped by a two-person (@Haochen Zhao) core team in 2 months.</li>
+            <li><strong><a href="https://scimaster.bohrium.com" target="_blank">SciMaster</a></strong>. An agentic platform for researchers that includes deep research, automated survey writing, etc.</li>
+          </p>
+          <p>
+          I have gained internship experience at Microsoft Research Asia (MSRA), Shanghai AI Laboratory, and Alibaba Tongyi Lab. I am seeking opportunities as a <strong>research intern</strong> or a <strong>full-time researcher</strong> and am open to collaborations. Feel free to reach out!
+          </p>
+          <p style="text-align:center">
+            <a href="mailto:yr991129@sjtu.edu.cn">Email</a> &nbsp/&nbsp
+            <a href="https://scholar.google.com/citations?user=Q4-VTxcAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
+            <a href="https://github.com/rui-ye/">Github</a> &nbsp/&nbsp
+            <a href="https://www.linkedin.com/in/rui-ye-a66b2420a/">LinkedIn</a> &nbsp/&nbsp
+            <a href="https://twitter.com/ruiye1129">Twitter</a>
+          </p>
+        </div>
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+          <td style="padding:20px;width:100%;vertical-align:middle">
+            <heading>🔥 News</heading>
+          </td>
+        </tr>
+        </tbody></table>
 
-          <table class="section-table">
-            <tbody>
+        <table>
+          <tbody>
               <tr>
-                <td>
-                  <h2>News</h2>
-                  <div class="scrollable-list">
-                    <ul>
-                      <li><strong>2026.05</strong> New preprint: Towards Long-horizon Embodied Agents with Tool-Aligned Vision-Language-Action Models.</li>
-                      <li><strong>2026.03</strong> New preprint: Linking Modality Isolation in Heterogeneous Collaborative Perception.</li>
-                      <li><strong>2025</strong> CoLMDriver is accepted to ICCV 2025.</li>
-                      <li><strong>2024</strong> Editable Scene Simulation for Autonomous Driving via Collaborative LLM-Agents appears at CVPR 2024.</li>
-                    </ul>
-                  </div>
-                </td>
+                  <td>
+                      <div class="scrollable-list">
+                          <ul>
+                              <li>[2026.05] <strong><a href="https://arxiv.org/pdf/2605.04036">OpenSeeker-v2</a></strong> (a search agent trained via SFT on 10k samples, yet, SOTA) is released!</li>
+                              <li>[2026.04] Honored to speak as the <strong><a href="https://mp.weixin.qq.com/s/LYlur7k6z3tCk2XrBfEE0g">student representative for SJTU 130th Anniversary (校庆学生代表)</strong></a></li>
+                              <li>[2026.03] <strong><a href="https://arxiv.org/pdf/2603.15594">OpenSeeker</a></strong> (the first state-of-the-art search agent with fully open-source data & model) is released!</li>
+                              <li>[2026.01] 4 papers (2 co-first authored) are accepted by <strong>ICLR 2026</strong>. See you in Brazil!</li>
+                              <li>[2025.12] Honored to be selected as the <strong><a href="https://mp.weixin.qq.com/s/KmfHj6I38cdWSIMtMSmrTA?scene=1">SJTU Academic Star</a></strong> (Top 10 in the university), with special thanks to Prof. Chen.</li>
+                              <li>[2025.10] Check our new agentic paradigm with proactive context management: <strong><a href="https://arxiv.org/pdf/2510.24699">AgentFold</a></strong>.</li>
+                              <li>[2025.10] I was awarded the <strong>National Scholarship</strong> 2025, with special thanks to Prof. Chen.</li>
+                              <li>[2025.09] New breakthrough: <strong><a href="https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/">Tongyi DeepResearch</a></strong>, an open-source 30B-A3B agent matching OpenAI's Deep Research.</li>
+                              <li>[2025.08] Our <a href="https://arxiv.org/pdf/2412.01708">study</a> on LLM for paper review is reported by <strong><a href="https://www.washingtonpost.com/nation/2025/07/17/ai-university-research-peer-review/">The Washington Post</a></strong>.</li>
+                              <li>[2025.07] Start internship at <strong>Alibaba Tongyi Lab, Deep Research Team</strong>, Shanghai (on-site).</li>
+                              <li>[2025.07] Our <strong><a href="https://arxiv.org/pdf/2507.05241">X-Masters</a></strong> for the first time achieves over 30% on <strong>Humanity's Last Exam (32.1%)</strong>!</li>
+                              <li>[2025.05] Happy to be invited as an <strong>Area Chair</strong> for NeurIPS 2025 Position Paper Track!</li>
+                              <li>[2025.05] One paper <strong>(MAS-GPT)</strong> is accepted by <strong>ICML 2025</strong>! See you in Vancouver (depends on visa)!</li>
+                              <li>[2025.04] Start the <a href="https://github.com/MASWorks">MASWorks Community</a>, a space for MAS researchers. Join us!</li>
+                              <li>[2025.04] Co-organize <a href="https://mas-2025.github.io/MAS-2025/">ICML 2025 Workshop on Multi-Agent Systems</a>! Welcome submissions and reviewers!</li>
+                              <li>[2025.03] One co-first authored paper about [incentivized model market] is accepted by <strong>Nature Communications</strong>!</li>
+                              <li>[2025.01] One paper about safety attack in FedLLM is accepted by <strong>ICLR 2025</strong>! See you in Singapore!</li>
+                              <li>[2024.12] Have been reviewed by LLMs? Check our <a href="https://arxiv.org/abs/2412.01708">recent work</a> on revealing their drawbacks and our advocacy!</li>
+                              <li>[2024.09] I was awarded the <strong>National Scholarship</strong> 2024, with special thanks to Prof. Chen.</li>
+                              <li>[2024.09] One paper (<a href="https://arxiv.org/pdf/2406.04845.pdf">FedLLM-Bench</a>) is accepted by <strong>NeurIPS 2024</strong>!</li>
+                              <li>[2024.08] One co-first authored paper (FedRSU) is accepted by <strong>T-ITS</strong>!</li>
+                              <li>[2024.06] We release the first realistic benchmark for FedLLM: <a href="https://arxiv.org/pdf/2406.04845.pdf">FedLLM-Bench</a>!</li>
+                              <li>[2024.05] One paper (<a href="https://arxiv.org/pdf/2402.06954.pdf">OpenFedLLM</a>) is accepted by <strong>KDD 2024</strong>!</li>
+                              <li>[2024.05] One co-first authored paper (Reverse Alignment) is accepted by <strong>Findings of ACL 2024</strong>!</li>
+                              <li>[2024.05] One co-first authored paper (MATRIX) is accepted by <strong>ICML 2024 (Spotlight)</strong>! See you in Austria!</li>
+                              <li>[2024.02] We release a comprehensive [FL x LLMs] framework <a href="https://arxiv.org/pdf/2402.06954.pdf">OpenFedLLM</a>!!!</li>
+                              <li>[2024.01] One paper (FedCOG) is accepted by <strong>ICLR 2024</strong>! See you in Vienna!</li>
+                              <li>[2023.08] One paper (FedFM) is accepted by <strong>IEEE Transactions on Signal Processing (T-SP)</strong>!</li>
+                              <li>[2023.07] Start second internship at Microsoft Research Asia <strong>(MSRA)</strong>, Beijing (on-site).</li>
+                              <li>[2023.04] Two papers (FedDisco & pFedGraph) are accepted by <strong>ICML 2023</strong>! See you in Hawaii!</li>
+                              <li>[2022.11] Start internship at Microsoft Research Asia <strong>(MSRA)</strong>, Beijing (remote).</li>
+                          </ul>
+                      </div>
+                  </td>
               </tr>
-            </tbody>
-          </table>
+          </tbody>
+        </table>
 
-          <table class="section-table">
-            <tbody>
-              <tr>
-                <td>
-                  <h2>Research Interests</h2>
-                  <p>
-                    Deep Learning · Computer Vision · Agentic AI · Autonomous Driving ·
-                    Embodied Agents · Collaborative Perception
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>📑 Publications</heading>
+              <p>
+                <sup>*</sup> denotes equal contribution, <sup>†</sup> denotes corresponding author, see full list in <a href="https://scholar.google.com/citations?user=Q4-VTxcAAAAJ&hl=en">Google Scholar</a>, some are <span class="highlight">highlighted</span>.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+    
+    <style> /* Year title format */
+      .year-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 20px;
+      }
+    </style>
 
-          <table class="section-table">
-            <tbody>
-              <tr>
-                <td>
-                  <h2>Selected Publications</h2>
-                  <p class="note">Publication list and citation counts are based on Google Scholar, updated in May 2026.</p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+    <div class="year-title">2026 (TBD)</div>
 
-          <table class="publication-table">
-            <tbody>
-              <tr>
-                <td class="thumb-cell">
-                  <div class="thumb">2026</div>
-                </td>
-                <td class="paper-cell">
-                  <a class="papertitle" href="https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=MpUEflgAAAAJ&pagesize=100&citation_for_view=MpUEflgAAAAJ:zYLM7Y9cAGgC">
-                    Towards Long-horizon Embodied Agents with Tool-Aligned Vision-Language-Action Models
-                  </a>
-                  <br>
-                  Z Lei, <strong>C Liu</strong>, Y Xiong, M Xiong, Y Ding, Z Zhang, W Li, S Chen
-                  <br>
-                  <em>arXiv preprint arXiv:2605.13119</em>, 2026
-                  <br>
-                  <a href="https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=MpUEflgAAAAJ&pagesize=100&citation_for_view=MpUEflgAAAAJ:zYLM7Y9cAGgC">Scholar</a>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="thumb-cell">
-                  <div class="thumb">2026</div>
-                </td>
-                <td class="paper-cell">
-                  <a class="papertitle" href="https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=MpUEflgAAAAJ&pagesize=100&citation_for_view=MpUEflgAAAAJ:IjCSPb-OGe4C">
-                    Linking Modality Isolation in Heterogeneous Collaborative Perception
-                  </a>
-                  <br>
-                  <strong>C Liu</strong>, Z Chao, S Chen
-                  <br>
-                  <em>arXiv preprint arXiv:2603.00609</em>, 2026
-                  <br>
-                  <a href="https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=MpUEflgAAAAJ&pagesize=100&citation_for_view=MpUEflgAAAAJ:IjCSPb-OGe4C">Scholar</a>
-                  / Citations: 1
-                </td>
-              </tr>
-
-              <tr>
-                <td class="thumb-cell">
-                  <div class="thumb">ICCV<br>2025</div>
-                </td>
-                <td class="paper-cell">
-                  <a class="papertitle" href="https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=MpUEflgAAAAJ&pagesize=100&citation_for_view=MpUEflgAAAAJ:9yKSN-GCB0IC">
-                    CoLMDriver: LLM-based Negotiation Benefits Cooperative Autonomous Driving
-                  </a>
-                  <br>
-                  <strong>C Liu</strong>, G Liu, Z Wang, J Yang, S Chen
-                  <br>
-                  <em>Proceedings of the IEEE/CVF International Conference on Computer Vision</em>, 2025
-                  <br>
-                  <a href="https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=MpUEflgAAAAJ&pagesize=100&citation_for_view=MpUEflgAAAAJ:9yKSN-GCB0IC">Scholar</a>
-                  / Citations: 10
-                </td>
-              </tr>
-
-              <tr>
-                <td class="thumb-cell">
-                  <div class="thumb">CVPR<br>2024</div>
-                </td>
-                <td class="paper-cell">
-                  <a class="papertitle" href="https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=MpUEflgAAAAJ&pagesize=100&citation_for_view=MpUEflgAAAAJ:u-x6o8ySG0sC">
-                    Editable Scene Simulation for Autonomous Driving via Collaborative LLM-Agents
-                  </a>
-                  <br>
-                  Y Wei, Z Wang, Y Lu, C Xu, <strong>C Liu</strong>, H Zhao, S Chen, Y Wang
-                  <br>
-                  <em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition</em>, 2024
-                  <br>
-                  <a href="https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=MpUEflgAAAAJ&pagesize=100&citation_for_view=MpUEflgAAAAJ:u-x6o8ySG0sC">Scholar</a>
-                  / Citations: 176
-                </td>
-              </tr>
-
-              <tr>
-                <td class="thumb-cell">
-                  <div class="thumb">ICRA<br>2022</div>
-                </td>
-                <td class="paper-cell">
-                  <a class="papertitle" href="https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=MpUEflgAAAAJ&pagesize=100&citation_for_view=MpUEflgAAAAJ:u5HHmVD_uO8C">
-                    Graph Neural Network Based Relation Learning for Abnormal Perception Information Detection in Self-Driving Scenarios
-                  </a>
-                  <br>
-                  K Jin, H Wang, <strong>C Liu</strong>, Y Zhai, L Tang
-                  <br>
-                  <em>2022 International Conference on Robotics and Automation (ICRA)</em>, 8943-8949, 2022
-                  <br>
-                  <a href="https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=MpUEflgAAAAJ&pagesize=100&citation_for_view=MpUEflgAAAAJ:u5HHmVD_uO8C">Scholar</a>
-                  / Citations: 17
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table class="section-table">
-            <tbody>
-              <tr>
-                <td>
-                  <h2>Education</h2>
-                  <p><strong>Shanghai Jiao Tong University</strong>, 20XX - Present</p>
-                  <p class="note">More education records to be added.</p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table class="section-table">
-            <tbody>
-              <tr>
-                <td>
-                  <h2>Honors and Service</h2>
-                  <p class="note">Honors, awards, academic service, and project links to be added.</p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table class="footer-table">
-            <tbody>
-              <tr>
-                <td>
-                  <p>
-                    This page follows the compact academic homepage style of
-                    <a href="https://rui-ye.github.io/">Rui Ye's homepage</a>, with original content replaced by Changxing Liu's information.
-                  </p>
-                  <p>Last updated: May 2026.</p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+    <table style="width:100%;border:0px;border-spacing:0 5px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody></tbody>
+      
+      <tr bgcolor="#ffffd0">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/openseekerv2_teaser.png" alt="openseekerv2" width="160">
+          <p><img src="images/openseekerv2_results.png" alt="openseekerv2" width="160"></p>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <div style="color: cornflowerblue;"><papertitle>OpenSeeker-v2: Pushing the Limits of Search Agents with Informative and High-Difficulty Trajectories</papertitle></div>
+          <div class="tags" data-tags="agents,llm"></div>
+          Yuwen Du<sup>*</sup>, <strong>Rui Ye<sup>*,#,†</sup></strong>, Shuo Tang, Huang Keduan, Xinyu Zhu, Yuzhu Cai, Siheng Chen<sup>†</sup>
+          <br>
+          <em><sup>*</sup> Equal Core Contributions, <sup>#</sup> Project Lead, <sup>†</sup> Corresponding Author</em>
+          <br>
+          <em>ArXiv Preprint</em>, 2026
+          <br>
+          <a href="https://arxiv.org/pdf/2605.04036">ArXiv</a> / <a href="data/openseekerv2.bib">BibTeX</a> / <a href="https://github.com/PolarSeeker/OpenSeeker">Code</a> <img src="https://img.shields.io/github/stars/rui-ye/OpenSeeker?style=social"/> / <a href="https://huggingface.co/PolarSeeker/OpenSeeker-v2-30B-SFT">Model</a>
+          <br>
+          <p> Building frontier search agents is often seen as a large-scale systems problem. OpenSeeker-v2 shows new possibilities. Trained on 10k samples with SFT, OpenSeeker-v2 achieves <strong>46.0% on BrowseComp, 58.1% on BrowseComp-ZH, 34.6% on Humanity's Last Exam, and 78.0% on xbench</strong>, outperforming Tongyi DeepResearch and RedSearcher that are trained via extensive CPT, SFT and RL.
         </td>
       </tr>
-    </tbody>
+
+      <tr bgcolor="#ffffd0">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/openseeker_teaser.png" alt="openseeker" width="160">
+          <p><img src="images/openseeker_results.png" alt="openseeker" width="160"></p>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <div style="color: cornflowerblue;"><papertitle>OpenSeeker: Democratizing Frontier Search Agents by Fully Open-Sourcing Training Data</papertitle></div>
+          <div class="tags" data-tags="agents,llm"></div>
+          Yuwen Du<sup>*</sup>, <strong>Rui Ye<sup>*,#,†</sup></strong>, Shuo Tang, Xinyu Zhu, Yijun Lu, Yuzhu Cai, Siheng Chen<sup>†</sup>
+          <br>
+          <em><sup>*</sup> Equal Core Contributions, <sup>#</sup> Project Lead, <sup>†</sup> Corresponding Author</em>
+          <br>
+          <em>ArXiv Preprint</em>, 2026
+          <br>
+          <a href="https://arxiv.org/pdf/2603.15594">ArXiv</a> / <a href="data/openseeker.bib">BibTeX</a> / <a href="https://github.com/rui-ye/OpenSeeker">Code</a> <img src="https://img.shields.io/github/stars/rui-ye/OpenSeeker?style=social"/> / <a href="https://huggingface.co/datasets/OpenSeeker/OpenSeeker-v1-Data">Training Data</a> / <a href="https://huggingface.co/OpenSeeker/OpenSeeker-v1-30B-SFT">Model</a> / <a href="https://mp.weixin.qq.com/s/lGx7WK_EvwisYCngiDW-mw">机器之心 (8k views)</a>
+          <br>
+          <p> For almost one year, training frontier search agents is the game of corporate: no high-quality open-source data is available in the community. OpenSeeker fills this gap. With simple SFT, <strong>OpenSeeker-30B outperforms Tongyi DeepResearch that is trained via extensive continual pre-training, SFT and RL, on BrowseComp-ZH (48.4% v.s. 46.7%)</strong>, becoming the first frontier search agents with fully open-source data & model.</p>
+        </td>
+      </tr>
+
+    </tbody></table>
+
+    <div class="year-title">2025 (Agent Year: From Chatbots to Agents)</div>
+
+    <table style="width:100%;border:0px;border-spacing:0 5px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+      <tr bgcolor="#ffffd0">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/agentfold_teaser.png" alt="agentfold" width="160">
+          <p><img src="images/agentfold_overview.png" alt="agentfold" width="160"></p>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <div style="color: cornflowerblue;"><papertitle>AgentFold: Long-Horizon Web Agents with Proactive Context Management</papertitle></div>
+          <div class="tags" data-tags="agents,llm"></div>
+          <strong>Rui Ye<sup>*†</sup></strong>, <span style="font-size: 13px;">Zhongwang Zhang<sup>*</sup>, Kuan Li<sup>*</sup>, Huifeng Yin<sup>*†</sup>, Zhengwei Tao, Yida Zhao, Liangcai Su, Liwen Zhang, Zile Qiao, Xinyu Wang, Pengjun Xie, Fei Huang, Siheng Chen, Jingren Zhou, Yong Jiang<sup>†</sup></span>
+          <br>
+          <em>International Conference on Learning Representations (ICLR)</em>, 2026
+          <br>
+          <a href="https://arxiv.org/pdf/2510.24699">ArXiv</a> / <a href="data/agentfold.bib">BibTeX</a> / <a href="https://modelscope.cn/models/iic/AgentFold-30B-A3B-Preview">ModelScope Model</a> / <a href="https://github.com/Alibaba-NLP/DeepResearch">Code</a> <img src="https://img.shields.io/github/stars/Alibaba-NLP/DeepResearch?style=social"/>
+          <br>
+          <p> AgentFold is a new agentic paradigm with proactive context management, which automatically 'folds' several historical steps (e.g., finish one sub-task) into one summary. With simple SFT, AgentFold-30B-A3B achieves achieves <strong>36.2% on BrowseComp and 47.3% on BrowseComp-ZH</strong>, surpassing DeepSeek-V3.1-671B-A37B and OpenAI's o4-mini.</p>
+        </td>
+      </tr>
+
+      <tr bgcolor="#ffffd0">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/tongyi_deepresearch.png" alt="tongyi_dr" width="160">
+          <p><img src="images/tongyi_deepresearch_pipeline.png" alt="tongyi_dr" width="160"></p>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <div style="color: cornflowerblue;"><papertitle>Tongyi DeepResearch: A New Era of Open-Source AI Researchers</papertitle></div>
+          <div class="tags" data-tags="agents,llm"></div>
+          Tongyi DeepResearch Team, Core Contributor
+          <br>
+          <a href="https://arxiv.org/pdf/2510.24701">Technical Report</a> / <a href="https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/">Blog</a> / <a href="https://huggingface.co/Alibaba-NLP/Tongyi-DeepResearch-30B-A3B">HF Model</a> / <a href="https://modelscope.cn/models/iic/Tongyi-DeepResearch-30B-A3B">MS Model</a> / <a href="https://github.com/Alibaba-NLP/DeepResearch">Code</a> <img src="https://img.shields.io/github/stars/Alibaba-NLP/DeepResearch?style=social"/> / <a href="https://x.com/Ali_TongyiLab/status/1967988004179546451">Twitter (X) (1.7M views)</a> / <a href="https://mp.weixin.qq.com/s/XLpRvvpG7XPX1GmpwG3BMQ">机器之心 (22k views)</a>
+          <br>
+          <p> Tongyi DeepResearch is the first fully open-source Web Agent to achieve performance on par with OpenAI's Deep Research with only <strong>30B (Activated 3B)</strong> paramters! Tongyi DeepResearch agent demonstrates state-of-the-art results, scoring <strong>32.9 on Humanity's Last Exam, 45.3 on BrowseComp, and 75.0 on the xbench-DeepSearch</strong> benchmark.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/websailorv2_teaser.png" alt="websailorv2" width="160">
+          <p><img src="images/websailorv2_rl.png" alt="websailorv2" width="160"></p>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <div style="color: cornflowerblue;"><papertitle>WebSailor-V2: Bridging the Chasm to Proprietary Agents via Synthetic Data and Scalable Reinforcement Learning</papertitle></div>
+          <div class="tags" data-tags="agents,llm"></div>
+          <span style="font-size: 13px;">Kuan Li<sup>*</sup>, Zhongwang Zhang<sup>*</sup>, Huifeng Yin<sup>*</sup>,</span> <strong>Rui Ye<sup>*</sup></strong>, <span style="font-size: 13px;">Yida Zhao<sup>*</sup>, Liwen Zhang<sup>*</sup>, Litu Ou, Dingchu Zhang, Xixi Wu, Jialong Wu, Xinyu Wang, Zile Qiao, Zhen Zhang, Yong Jiang, Pengjun Xie, Fei Huang, Jingren Zhou</span>
+          <br>
+          <em>International Conference on Learning Representations (ICLR)</em>, 2026
+          <br>
+          <a href="https://arxiv.org/pdf/2509.13305">arXiv</a> / <a href="data/websailorv2.bib">BibTeX</a> / <a href="https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/">Blog</a> / <a href="https://github.com/Alibaba-NLP/DeepResearch">Code</a> <img src="https://img.shields.io/github/stars/Alibaba-NLP/DeepResearch?style=social"/>
+          <br>
+          <p> We present WebSailor-V2, a complete post-training pipeline encompassing data construction, SFT, and RL. Our 30B-A3B model achieves <strong>35.3 on BrowseComp and 30.6 on Humanity’s Last Exam (HLE)</strong>, surpassing the 671B DeepSeek-V3.1.</p>
+        </td>
+      </tr>
+      
+      <tr bgcolor="#ffffd0">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/xmaster.png" alt="xmaster" width="160">
+          <p><img src="images/xmaster_overview.png" alt="xmaster" width="160"></p>
+        </td>
+        <!-- <td width="75%" valign="center"> -->
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <div style="color: cornflowerblue;"><papertitle>SciMaster: Towards General-Purpose Scientific AI Agents<br>Part I. X-Master as Foundation — Can We Lead on Humanity's Last Exam?</papertitle></div>
+          <div class="tags" data-tags="agents,llm,co"></div>
+          Jingyi Chai<sup>*</sup>, Shuo Tang<sup>*</sup><strong>Rui Ye<sup>*</sup></strong>, Yuwen Du<sup>*</sup>, Xinyu Zhu, Mengcheng Zhou, Yanfeng Wang, Weinan E, Yuzhi Zhang, Linfeng Zhang, Siheng Chen
+          <br>
+          <em><sup>*</sup> Equal Contributions. The ordering was randomized via a dice roll.</em>
+          <br>
+          <em>ArXiv Preprint</em>, 2025
+          <br>
+          <a href="https://arxiv.org/pdf/2507.05241">arXiv</a> / <a href="data/scimaster.bib">BibTeX</a> / <a href="https://github.com/sjtu-sai-agents/X-Master">Code</a> <img src="https://img.shields.io/github/stars/sjtu-sai-agents/X-Master?style=social"/> / <a href="https://scimaster.bohrium.com">Chat Interface</a> / <a href="https://mp.weixin.qq.com/s/U6QKmdtgbSpdMwQNTTU97w">量子位 (29k views)</a>
+          <br>
+          <p> X-Masters sets a new record on Humanity's Last Exam (HLE) with a score of <strong>32.1%</strong>, surpassing OpenAI's and Google's Deep Research (26.6% and 26.9%) and becoming the <strong>first to exceed 30%</strong>. X-Masters is an agentic workflow built upon our tool-augmented reasoning agent X-Master, designed to flexibly interact with external tools during reasoning.</p>
+        </td>
+      </tr>
+
+      <tr bgcolor="#ffffd0">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/maslab_overview.png" alt="maslab" width="160">
+          <p><img src="images/maslab_results.png" alt="maslab" width="160"></p>
+        </td>
+        <!-- <td width="75%" valign="center"> -->
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <div style="color: cornflowerblue;"><papertitle>MASLab: A Unified and Comprehensive Codebase for LLM-based Multi-Agent Systems</papertitle></div>
+          <div class="tags" data-tags="agents,llm,co"></div>
+          <strong>Rui Ye</strong>, Keduan Huang, Qimin Wu, Yuzhu Cai, Tian Jin, Xianghe Pang, Xiangrui Liu, Jiaqi Su, Chen Qian, Bohan Tang, Kaiqu Liang, Jiaao Chen, Yue Hu, Zhenfei Yin, Rongye Shi, Bo An, Yang Gao, Wenjun Wu, Lei Bai<sup>†</sup>, Siheng Chen<sup>†</sup>
+          <br>
+          <em>ArXiv Preprint</em>, 2025
+          <br>
+          <a href="https://arxiv.org/pdf/2505.16988">arXiv</a> / <a href="data/maslab.bib">BibTeX</a> / <a href="https://github.com/MASWorks/MASLab">Code</a> <img src="https://img.shields.io/github/stars/MASWorks/MASLab?style=social"/> / <a href="https://mp.weixin.qq.com/s/4LzUYNyuHZhcsTd0RN-fwQ">机器之心</a>
+          <br>
+          <p> This paper introduces a unified, comprehensive, and research-friendly codebase for LLM-based multi-agent systems (MAS): MASLab. MASLab supports fairly comparing over 20 methods by unifying data pre-processing, configurations, and evaluation protocols.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/xmas_overview.png" alt="xmas" width="160">
+          <p><img src="images/xmas_results.png" alt="xmas" width="160"></p>
+        </td>
+        <!-- <td width="75%" valign="center"> -->
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <div style="color: cornflowerblue;"><papertitle>X-MAS: Towards Building Multi-Agent Systems with Heterogeneous LLMs</papertitle></div>
+          <div class="tags" data-tags="agents,llm,co"></div>
+          <strong>Rui Ye<sup>*</sup></strong>, Xiangrui Liu<sup>*</sup>, Qimin Wu, Xianghe Pang, Zhenfei Yin, Lei Bai, Siheng Chen<sup>†</sup>
+          <br>
+          <em>ArXiv Preprint</em>, 2025
+          <br>
+          <a href="https://arxiv.org/pdf/2505.16997">arXiv</a> / <a href="data/xmas.bib">BibTeX</a> / <a href="https://github.com/MASWorks/X-MAS">Code</a> <img src="https://img.shields.io/github/stars/MASWorks/X-MAS?style=social"/>
+          <br>
+          <p> This paper advocates heterogeneous LLM-driven multi-agent systems (X-MAS). We introduce X-MAS-Bench and assess 27 LLMs across 5 MAS-related functions and domains. Based on these findings, we show that X-MAS can consistently and significantly improves the performance of homogeneous MAS (e.g., up to 47% boost on AIME).</p>
+        </td>
+      </tr>
+
+      <tr bgcolor="#ffffd0">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/masgpt_overview.png" alt="masgpt" width="160">
+          <p><img src="images/masgpt_reasoning.png" alt="masgpt" width="160"></p>
+        </td>
+        <!-- <td width="75%" valign="center"> -->
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <div style="color: cornflowerblue;"><papertitle>MAS-GPT: Training LLMs to Build LLM-based Multi-Agent Systems</papertitle></div>
+          <div class="tags" data-tags="agents,llm,co"></div>
+          <strong>Rui Ye</strong>, Shuo Tang, Rui Ge, Yaxin Du, Zhenfei Yin, Siheng Chen<sup>†</sup>, Jing Shao<sup>†</sup>
+          <br>
+          <em>International Conference on Machine Learning (ICML)</em>, 2025
+          <br>
+          <a href="https://arxiv.org/pdf/2503.03686">arXiv</a> / <a href="data/masgpt.bib">BibTeX</a> / <a href="https://huggingface.co/MASWorks/MAS-GPT-32B">Model</a> / <a href="https://github.com/MASWorks/MAS-GPT">Code</a> <img src="https://img.shields.io/github/stars/MASWorks/MAS-GPT?style=social"/> / <a href="https://mp.weixin.qq.com/s/KPB2rreGL461wsG1LuKIiA">机器之心</a>
+          <br>
+          <p> This paper proposes to formulate the process of building LLM-based multi-agent systems (MAS) as a generative task, making it as simple as querying ChatGPT. We design a dataset construction pipeline and train MAS-GPT, a 32B LLM capable of generating an executable MAS give any specific query. Results demonstrate MAS-GPT’s simplicity, cost-efficiency, and generality.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/ipfl.png" alt="ipfl" width="160">
+        </td>
+        <!-- <td width="75%" valign="center"> -->
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <div style="color: cornflowerblue;"><papertitle>Incentivizing Inclusive Contributions in Model-Sharing Markets</papertitle></div>
+          <div class="tags" data-tags="llm,fl,co,trust"></div>
+          Enpei Zhang<sup>*</sup>, Jingyi Chai<sup>*</sup>, <strong>Rui Ye<sup>*</sup></strong>, Yanfeng Wang, Siheng Chen<sup>†</sup>
+          <br>
+          <em><strong>Nature Communications</strong></em>
+          <br>
+          <a href="https://www.nature.com/articles/s41467-025-62959-5">Nature</a> / <a href="data/ipfl.bib">BibTeX</a>
+          <br>
+          <p> This paper proposes inclusive and incentivized personalized federated learning (iPFL), which incentivizes data holders with diverse purposes to collaboratively train personalized models without revealing raw data. </p>
+        </td>
+      </tr>
+    </tbody></table>
+
+    <div class="year-title">2024 (Transition Year: From Federated Learning to LLMs)</div>
+
+    <table style="width:100%;border:0px;border-spacing:0 5px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+      <tr bgcolor="#ffffd0">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/badllmreviewer.png" alt="badllmreviewer" width="160">
+          <p><img src="images/badllmreviewer_case.png" alt="badllmreviewer" width="160"></p>
+        </td>
+        <!-- <td width="75%" valign="center"> -->
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <div style="color: cornflowerblue;"><papertitle>Are We There Yet? Revealing the Risks of Utilizing Large Language Models in Scholarly Peer Review</papertitle></div>
+          <div class="tags" data-tags="llm,trust"></div>
+          <strong>Rui Ye<sup>*</sup></strong>, <span style="font-size: 11px;">Xianghe Pang<sup>*</sup>, Jingyi Chai, Jiaao Chen, Zhenfei Yin, Zhen Xiang, Xiaowen Dong, Jing Shao, Siheng Chen<sup>†</sup></span>
+          <br>
+          <em>Preprint</em>, 2024
+          <br>
+          <a href="https://arxiv.org/abs/2412.01708">arXiv</a> / <a href="data/badllmreviewer.bib">BibTeX</a> / <a href="https://rui-ye.github.io/BadLLMReviewer/">Project Page</a> / <a href="https://mp.weixin.qq.com/s/3SY23-PKGN74y2ZlaHe6WQ">机器之心 (19k views)</a> / <a href="https://www.washingtonpost.com/nation/2025/07/17/ai-university-research-peer-review/">The Washington Post</a>
+          <br>
+          <p> Given that LLMs are being integrated into peer review, in this study, we comprehensively reveal the vulnerabilities of LLM-generated reviews by focusing on (explicit and implicit) manipulation and inherent flaws (hallucination and bias). Our findings underscore that we are not yet ready for widespread adoption, emphasizing the need for punitive measures, detection techniques, and robust safeguards.</p>
+        </td>
+      </tr>
+      
+      <tr>
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/fedllmattack_overview.png" alt="fedllmattack" width="160">
+          <p><img src="images/fedllmattack_results.png" alt="fedllmattack" width="160"></p>
+        </td>
+        <!-- <td width="75%" valign="center"> -->
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <div style="color: cornflowerblue;"><papertitle>Emerging Safety Attack and Defense in Federated Instruction Tuning of Large Language Models</papertitle></div>
+          <div class="tags" data-tags="llm,fl,trust,co"></div>
+          <strong>Rui Ye<sup>*</sup></strong>, Jingyi Chai<sup>*</sup>, Xiangrui Liu<sup>*</sup>, Yaodong Yang, Yanfeng Wang, Siheng Chen<sup>†</sup>
+          <br>
+          <em>International Conference on Learning Representations (ICLR)</em>, 2025
+          <br>
+          <a href="https://arxiv.org/abs/2406.10630">arXiv</a> / <a href="data/fedllmattack.bib">BibTeX</a>
+          <br>
+          <p> This paper for the first time reveals the vulnerability of safety alignment during federated instruction tuning by proposing a simple safety attack method. While many existing FL defense methods fail to defend against such attack, we propose a post-hoc defense method that automatically and effectively enhances the safety alignment of LLMs.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/fedllmbench_table.png" alt="fedllmbench" width="160">
+          <p><img src="images/fedllmbench_quality.png" alt="fedllmbench" width="160"></p>
+          <p><img src="images/fedllmbench_emb.png" alt="fedllmbench" width="160"></p>
+        </td>
+        <!-- <td width="75%" valign="center"> -->
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <div style="color: cornflowerblue;"><papertitle>FedLLM-Bench: Realistic Benchmarks for Federated Learning of Large Language Models</papertitle></div>
+          <div class="tags" data-tags="llm,fl,trust,co"></div>
+          <strong>Rui Ye<sup>*</sup></strong>, Rui Ge<sup>*</sup>, Xinyu Zhu, Jingyi Chai, Yaxin Du, Yang Liu, Yanfeng Wang, Siheng Chen<sup>†</sup>
+          <br>
+          <em>Conference on Neural Information Processing Systems (NeurIPS)</em>, 2024
+          <br>
+          <a href="https://arxiv.org/pdf/2406.04845">arXiv</a> / <a href="data/fedllmbench.bib">BibTeX</a> / <a href="https://github.com/rui-ye/FedLLM-Bench">Code</a> <img src="https://img.shields.io/github/stars/rui-ye/FedLLM-Bench?style=social"/>
+          <br>
+          <p> This paper proposes the first realistic benchmark for federated learning of large language models, termed FedLLM-Bench. It encompasses 3 datasets for instruction tuning task and 1 dataset for preference alignment task, which exhibit diversities in language, quality, quantity, instruction, length, embedding, and preference.</p>
+        </td>
+      </tr>
+      
+      <tr bgcolor="#ffffd0">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/openfedllm.png" alt="openfedllm" width="160">
+          <p><img src="images/openfedllm_comp.png" alt="openfedllm" width="160"></p>
+        </td>
+        <!-- <td width="75%" valign="center"> -->
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <div style="color: cornflowerblue;"><papertitle>OpenFedLLM: Training Large Language Models on Decentralized Private Data via Federated Learning</papertitle></div>
+          <div class="tags" data-tags="llm,fl,trust,co"></div>
+          <strong>Rui Ye</strong>, <span style="font-size: 12px;">Wenhao Wang, Jingyi Chai, Dihan Li, Zexi Li, Yinda Xu, Yaxin Du, Yanfeng Wang, Siheng Chen<sup>†</sup></span>
+          <br>
+          <em>Conference on Knowledge Discovery and Data Mining (KDD)</em>, 2024
+          <br>
+          <em>ICLR AGI Workshop and DPFM Workshop</em>, 2024
+          <br>
+          <a href="https://arxiv.org/pdf/2402.06954">arXiv</a> / <a href="https://dl.acm.org/doi/abs/10.1145/3637528.3671582">ACM</a> / <a href="data/openfedllm.bib">BibTeX</a> / <a href="https://github.com/rui-ye/OpenFedLLM">Code</a> <img src="https://img.shields.io/github/stars/rui-ye/OpenFedLLM?style=social"/>
+          <br>
+          <p> This paper proposes OpenFedLLM for training large language models on decentralized private data via federated learning, which covers instruction tuning, value alignment, 7 FL algorithms, 8 training datasets, and 30+ evaluation metrics. Based on OpenFedLLM, we conduct a comprehensive empirical study, provide insights, and point out future directions.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/matrix.png" alt="matrix" width="160">
+          <p><img src="images/matrix_eval.png" alt="matrix" width="160"></p>
+        </td>
+        <!-- <td width="75%" valign="center"> -->
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <div style="color: cornflowerblue;"><papertitle>Self-Alignment of Large Language Models via Monopolylogue-based Social Scene Simulation</papertitle></div>
+          <div class="tags" data-tags="llm,trust,co"></div>
+          Xianghe Pang<sup>*</sup>, Shuo Tang<sup>*</sup>, <strong>Rui Ye<sup>*</sup></strong>, Yuxin Xiong, Bolun Zhang, Yanfeng Wang, Siheng Chen<sup>†</sup>
+          <br>
+          <em>International Conference on Machine Learning (ICML)</em>, <strong>Spotlight</strong>, 2024
+          <br>
+          <em>ICLR AGI Workshop</em>, <strong>Oral</strong>, 2024
+          <br>
+          <a href="https://arxiv.org/abs/2402.05699">arXiv</a> / <a href="https://openreview.net/forum?id=l7shXGuGBT">OpenReview</a> / <a href="data/matrix.bib">BibTeX</a> / <a href="https://shuotang123.github.io/MATRIX/">Project</a> / <a href="https://github.com/ShuoTang123/MATRIX">Code</a> <img src="https://img.shields.io/github/stars/ShuoTang123/MATRIX?style=social"/> / <a href="https://mp.weixin.qq.com/s/9pyjOfuDmMyDJUWAkJ9TCQ">机器之心</a>
+          <br>
+          <p> This paper proposes to self-align large language models via social scene simulation, which is powered by our proposed simulator called MATRIX. Human evaluations show that our aligned 13/30B LLMs can outperform GPT-4 on value alignment.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/reverse_alignment.png" alt="reverse_alignment" width="160">
+        </td>
+        <!-- <td width="75%" valign="center"> -->
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <div style="color: cornflowerblue;"><papertitle>On the Vulnerability of Safety Alignment in Open-Access LLMs</papertitle></div>
+          <div class="tags" data-tags="llm,trust"></div>
+          <span style="font-size: 11px;">Jingwei Yi<sup>*</sup></span>, <strong>Rui Ye<sup>*</sup></strong>, <span style="font-size: 11px;">Qisi Chen, Bin Zhu, Siheng Chen<sup>†</sup>, Defu Lian, Guangzhong Sun, Xing Xie, Fangzhao Wu<sup>†</sup></span>
+          <br>
+          <em>Findings of the Association for Computational Linguistics (ACL)</em>, 2024
+          <br>
+          <a href="https://aclanthology.org/2024.findings-acl.549.pdf">Paper</a> / <a href="data/reverse.bib">BibTeX</a>
+          <br>
+          <p> This paper unreveals the vulnerability of value alignment in aligned open-source LLMs by proposing a series of efficient attack methods (i.e., reverse alignment). Experiments show that simple fine-tuning can significantly compromise the alignment of the LLMs.</p>
+        </td>
+      </tr>
+    </tbody></table>
+
+    <div class="year-title">2023 (Rookie Year: Federated Learning)</div>
+
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+      <tr>
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/fedcog.png" alt="fedcog" width="160">
+        </td>
+        <!-- <td width="75%" valign="center"> -->
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <div style="color: cornflowerblue;"><papertitle>Fake It Till Make It: Federated Learning with Consensus-Oriented Generation</papertitle></div>
+          <div class="tags" data-tags="fl,trust,co"></div>
+          <strong>Rui Ye</strong>, Yaxin Du, Zhenyang Ni, Siheng Chen<sup>†</sup>, Yanfeng Wang
+          <br>
+          <em>International Conference on Learning Representations (ICLR)</em>, 2024
+          <br>
+          <a href="https://openreview.net/pdf?id=NY3wMJuaLf">Paper</a> / <a href="data/fedcog.bib">BibTeX</a> / <a href="https://github.com/rui-ye/FedCOG">Code</a>
+          <br>
+          <p> This paper proposes to more fundamentally handle data heterogeneity from the perspective of data, which is achieved by extracting consensus data from the global model to complement clients' heterogeneous data.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/feddisco.png" alt="feddisco" width="160">
+        </td>
+        <!-- <td width="75%" valign="center"> -->
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <div style="color: cornflowerblue;"><papertitle>FedDisco: Federated Learning with Discrepancy-aware Collaboration</papertitle></div>
+          <div class="tags" data-tags="fl,trust,co"></div>
+          <strong>Rui Ye</strong>, Mingkai Xu, Jianyu Wang, Chenxin Xu, Siheng Chen<sup>†</sup>, Yanfeng Wang
+          <br>
+          <em>International Conference on Machine Learning (ICML)</em>, 2023
+          <br>
+          <a href="https://arxiv.org/abs/2305.19229">arXiv</a> / <a href="data/feddisco.bib">BibTeX</a> / <a href="https://proceedings.mlr.press/v202/ye23f.html">PMLR</a> / <a href="https://github.com/MediaBrain-SJTU/FedDisco">Code</a> <img src="https://img.shields.io/github/stars/MediaBrain-SJTU/FedDisco?style=social"/>
+          <br>
+          <p> Based on our empirical and theoretical observations, we propose to aggregate models based on both dataset size and a defined discrepancy value. </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/pfedgraph.png" alt="pfedgraph" width="160">
+        </td>
+        <!-- <td width="75%" valign="center"> -->
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <div style="color: cornflowerblue;"><papertitle>Personalized Federated Learning with Inferred Collaboration Graphs</papertitle></div>
+          <div class="tags" data-tags="fl,trust,co"></div>
+          <strong>Rui Ye<sup>*</sup></strong>, Zhenyang Ni<sup>*</sup>, Fangzhao Wu, Siheng Chen<sup>†</sup>, Yanfeng Wang
+          <br>
+          <em>International Conference on Machine Learning (ICML)</em>, 2023
+          <br>
+          <a href="https://proceedings.mlr.press/v202/ye23b.html">PMLR</a> / <a href="data/pfedgraph.bib">BibTeX</a> / <a href="https://github.com/MediaBrain-SJTU/pFedGraph">Code</a> <img src="https://img.shields.io/github/stars/MediaBrain-SJTU/pFedGraph?style=social"/>
+          <br>
+          <p> We propose a pFedGraph algorithm to promote more collaboration between clients with more similar data distributions. </p>
+        </td>
+      </tr>
+      
+      <tr>
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/fedfm.png" alt="fedfm" width="160">
+        </td>
+        <!-- <td width="75%" valign="center"> -->
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <div style="color: cornflowerblue;"><papertitle>FedFM: Anchor-based Feature Matching for Data Heterogeneity in Federated Learning</papertitle></div>
+          <div class="tags" data-tags="fl,trust,co"></div>
+          <strong>Rui Ye</strong>, Zhenyang Ni, Chenxin Xu, Jianyu Wang, Siheng Chen<sup>†</sup>, Yanfeng Wang
+          <br>
+          <em>IEEE Transactions on Signal Processing (TSP)</em>, 2023
+          <br>
+          <a href="https://arxiv.org/abs/2210.07615">Paper</a> / <a href="https://ieeexplore.ieee.org/abstract/document/10286439">IEEE</a> / <a href="data/fedfm.bib">BibTeX</a> / <a href="https://github.com/rui-ye/FedFM">Code (PyTorch, PaddlePaddle, MindSpore)</a>
+          <br>
+          <p> We propose to align category-wise feature spaces of clients in FL, which achieves pleasant performance with theoretical convergence guarantee. </p>
+        </td>
+      </tr>
+    
+    </tbody></table>
+
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr>
+      <td style="padding:20px;width:100%;vertical-align:middle">
+        <heading>🎓 Educations</heading>
+      </td>
+    </tr>
+  </tbody></table>
+
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle;">
+        <img src="images/sjtu.png" alt="sjtu" width="100">
+      </td>
+      <!-- <td width="75%" valign="center"> -->
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        Degree: Bachelor
+        <br>
+        Period: 2018.09 - 2022.06
+        <br>
+        Major:  Information Engineering (AI Class)
+        <br>
+        <strong>GPA:    3.94/4.3 (ranked 1st out of 150)</strong>
+      </td>
+    </tr>
+
+  </tbody></table>
+
+    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+      <tr>
+        <td>
+          <heading>🥇 Honors & Awards</heading>
+        </td>
+      </tr>
+    </tbody></table>
+
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr>
+        <td>
+          <ul>
+            <li><strong><a href="https://mp.weixin.qq.com/s/LYlur7k6z3tCk2XrBfEE0g">Student Representative for the 130th Anniversary Celebration of SJTU (校庆学生发言代表)</a></strong>, 2026 (Only one)</li>
+            <li><strong><a href="https://mp.weixin.qq.com/s/KmfHj6I38cdWSIMtMSmrTA?scene=1">SJTU Academic Star (学术之星)</a></strong>, 2025 (Top 10 in the university)</li>
+            <li><strong>National Scholarship</strong> for PhD Students, 2025</li>
+            <li><strong>National Scholarship</strong> for PhD Students, 2024</li>
+            <li><strong>National Scholarship</strong> for Undergraduates, 2020 (2 out of 150)</li>
+            <li><strong>Shanghai Outstanding Graduates</strong>, 2022</li>
+            <li>Samsung Scholarship, 2023 (only one awardee)</li>
+            <li>Mathematical Contest in Modeling, Finalist, 2021 (<1%)</li>
+            <li>Shanghai Jiao Tong University Wenjun Wu AI Class, 2022 (16 are selected)</li>
+            <li>Shanghai Jiao Tong University Xu Zhang Academician Scholarship, 2022 (3 out of 150)</li>
+            <li>Shanghai Jiao Tong University Ceyear Scholarship, 2021</li>
+            <li>Shanghai Jiao Tong University Fujian Alumni Association Scholarship, 2019 (the youngest awardee)</li>
+            <li>Shanghai Jiao Tong University Class B Scholarship, 2019&2020&2021</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody></table>
+
+    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+      <tr>
+        <td>
+          <heading>🎉 Activities</heading>
+        </td>
+      </tr>
+    </tbody></table>
+
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr>
+        <td>
+          <ul>
+            <li><strong>Workshop Co-organizer</strong> of <a href="https://mas-2025.github.io/MAS-2025/">ICML 2025 Workshop on Multi-Agent Systems</a></li>
+            <li><strong>Area Chair</strong> of NeurIPS 2025 Position Paper Track</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody></table>
+
+				
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td>
+              <heading>👀 Misc</heading>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <strong>Reviewer</strong>:
+              <ul>
+                <li> 2025: ICLR, ICML, NeurIPS Main, CPVR, AAAI</li>
+                <li> 2024: ICLR, ICML, NeurIPS Main, NeurIPS Data, ICASSP</li>
+                <li> 2023: NeurIPS Main</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <strong>Life</strong>:I love playing basketball / listening rap music / travelling.
+            </td>
+          </tr>
+        </tbody></table>
+
+
+        <table width="50%" align="center" border="0" cellpadding="20"><tbody>
+				<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=7PmJikxJk324BBRWUrbE2SWNBd9X6PBJ1XTz2PMpA7k&cl=ffffff&w=a"></script>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:left;font-size:small;">
+                Last Update: 2026.04</a>.
+              </p>
+              <p style="text-align:right;font-size:small;">
+                Derived from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's website</a>.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
   </table>
+
+  <!-- Definations for tags -->
+  <script>
+    // 预定义标签的名称和简称
+    const tagsMap = {
+      'llm': { name: 'LLMs', class: 'tag-llm' },
+      'trust': { name: 'Trustworhty AI', class: 'tag-trust' },
+      'co': { name: 'Collaborative AI', class: 'tag-co' },
+      'fl': { name: 'Federated Learning', class: 'tag-fl' },
+      'agents': { name: 'Agents', class: 'tag-agents' },
+    };
+  
+    // 渲染标签并为不同标签分配不同的CSS类
+    document.querySelectorAll('.tags').forEach(tagDiv => {
+      const tagAbbreviations = tagDiv.getAttribute('data-tags').split(',');
+      tagAbbreviations.forEach(abbreviation => {
+        if (tagsMap[abbreviation]) {
+          const tagElement = document.createElement('span');
+          tagElement.classList.add('tag', tagsMap[abbreviation].class);
+          tagElement.textContent = tagsMap[abbreviation].name;
+          tagDiv.appendChild(tagElement);
+        }
+      });
+    });
+  </script>
 </body>
+
 </html>
