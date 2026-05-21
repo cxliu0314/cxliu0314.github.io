@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Avatar placeholder</title>
+  <desc id="desc">A warm geometric placeholder portrait.</desc>
+  <rect width="512" height="512" rx="64" fill="#efe0d5"/>
+  <circle cx="256" cy="188" r="84" fill="#9b4f2f"/>
+  <path d="M108 438c24-92 86-142 148-142s124 50 148 142" fill="#5c321f"/>
+  <path d="M116 102c46-42 104-64 174-56 46 6 84 24 112 54-62-14-116-8-162 18-44 24-86 28-124-16z" fill="#24211d" opacity=".9"/>
+  <circle cx="224" cy="184" r="10" fill="#fffdf8"/>
+  <circle cx="288" cy="184" r="10" fill="#fffdf8"/>
+  <path d="M226 230c22 18 42 18 62 0" fill="none" stroke="#fffdf8" stroke-width="12" stroke-linecap="round"/>
+</svg>
