@@ -6,7 +6,7 @@
   <meta name="author" content="Changxing Liu">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#127760;</text></svg>">
   <style>
     table {
       width: 100%;
@@ -43,6 +43,29 @@
     .tag-perception { background-color: #caffbf; }
     .tag-vla { background-color: #fdffb6; }
 
+    .intro-layout {
+      display: flex;
+      gap: 28px;
+      align-items: flex-start;
+      margin: 20px 20px 0;
+    }
+
+    .intro-photo {
+      flex: 0 0 200px;
+      max-width: 200px;
+    }
+
+    .intro-photo img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .intro-text {
+      flex: 1;
+      min-width: 0;
+    }
+
     .year-title {
       font-size: 18px;
       font-weight: bold;
@@ -69,6 +92,41 @@
       font-weight: 700;
       text-align: center;
     }
+
+    .paper-summary {
+      margin-top: 8px;
+      margin-bottom: 0;
+    }
+
+    .visitor-widgets {
+      display: flex;
+      gap: 18px;
+      align-items: stretch;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+
+    .map-widget,
+    .pageviews-widget {
+      flex: 1 1 260px;
+    }
+
+    .map-widget iframe {
+      width: 100%;
+      height: 180px;
+      border: 0;
+      border-radius: 6px;
+    }
+
+    @media (max-width: 640px) {
+      .intro-layout {
+        display: block;
+      }
+
+      .intro-photo {
+        margin: 0 auto 16px;
+      }
+    }
   </style>
 </head>
 
@@ -83,46 +141,43 @@
             </p>
           </div>
 
-          <div style="overflow:auto;margin-top:20px;margin-left:20px;">
-            <p>
-              I am a second-year Ph.D. student in Computer Science and Technology at
-              <a href="https://en.sjtu.edu.cn">Shanghai Jiao Tong University (SJTU)</a>,
-              advised by <a href="https://siheng-chen.github.io">Prof. Siheng Chen</a>.
-              Prior to my Ph.D., I received my Bachelor's degree in Electronic Science
-              and Technology from SJTU and was awarded Shanghai Outstanding Graduate.
-            </p>
-
-            <div style="float:right;margin-left:40px;margin-right:40px;margin-top:10px;margin-bottom:10px;width:40%;max-width:200px;">
+          <div class="intro-layout">
+            <div class="intro-photo">
               <a href="images/lcx.jpg">
-                <img style="width:100%;height:250px;object-fit:cover;" alt="profile photo" src="images/lcx.jpg" class="hoverZoomLink">
+                <img alt="profile photo" src="images/lcx.jpg" class="hoverZoomLink">
               </a>
             </div>
 
-            <p>
-              My research focuses on building generalizable embodied intelligence,
-              especially efficient collaborative embodied agent systems for diverse
-              and long-horizon physical-world manipulation tasks.
-            </p>
+            <div class="intro-text">
+              <p>
+                I am a second-year Ph.D. student at
+                <a href="https://en.sjtu.edu.cn">Shanghai Jiao Tong University (SJTU)</a>,
+                advised by <a href="https://siheng-chen.github.io">Prof. Siheng Chen</a>.
+                Prior to my Ph.D., I received my Bachelor's degree from SJTU and was awarded
+                Shanghai Outstanding Graduate.
+              </p>
 
-            <p>
-              My current interests include <strong>Embodied Agents</strong>,
-              <strong>Multi-modal AI</strong>, collaborative perception, autonomous
-              driving, and vision-language-action models.
-            </p>
+              <p>
+                My current research interest is to build generalizable embodied intelligence.
+                In particular, I focus on two core challenges of embodied intelligence,
+                diverse tasks and long-horizon tasks, and explore effective, efficient, and
+                collaborative embodied agent systems.
+              </p>
 
-            <p style="text-align:center">
-              <a href="mailto:cx-liu@sjtu.edu.cn">Email</a> &nbsp/&nbsp
-              <a href="https://scholar.google.com.hk/citations?user=MpUEflgAAAAJ&hl=zh-CN">Google Scholar</a> &nbsp/&nbsp
-              <a href="https://github.com/cxliu0314">Github</a> &nbsp/&nbsp
-              <a href="https://www.linkedin.com/in/changxing-liu-226492392/?isSelfProfile=true">LinkedIn</a>
-            </p>
+              <p style="text-align:center">
+                <a href="mailto:cx-liu@sjtu.edu.cn">Email</a> &nbsp/&nbsp
+                <a href="https://scholar.google.com.hk/citations?user=MpUEflgAAAAJ&hl=zh-CN">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://github.com/cxliu0314">Github</a> &nbsp/&nbsp
+                <a href="https://www.linkedin.com/in/changxing-liu-226492392/?isSelfProfile=true">LinkedIn</a>
+              </p>
+            </div>
           </div>
 
           <table>
             <tbody>
               <tr>
                 <td style="padding:20px;width:100%;vertical-align:middle">
-                  <heading>🔥 News</heading>
+                  <heading>&#128293; News</heading>
                 </td>
               </tr>
             </tbody>
@@ -133,10 +188,10 @@
               <tr>
                 <td>
                   <ul>
-                    <li>[2026.05] New preprint: <strong>Towards Long-horizon Embodied Agents with Tool-Aligned Vision-Language-Action Models</strong>.</li>
-                    <li>[2026.03] <strong>CodeAlign</strong> (Linking Modality Isolation in Heterogeneous Collaborative Perception) is accepted to <strong>CVPR 2026</strong>.</li>
-                    <li>[2025] <strong>CoLMDriver</strong> is accepted to <strong>ICCV 2025</strong>.</li>
-                    <li>[2024] <strong>Editable Scene Simulation for Autonomous Driving via Collaborative LLM-Agents</strong> appears at <strong>CVPR 2024</strong>.</li>
+                    <li>[2026.05] <strong>VLAs-as-Tools</strong> (<a href="https://arxiv.org/pdf/2605.13119">paper</a>) is released, decomposing long-horizon embodied tasks into VLM planning and specialized VLA tool execution.</li>
+                    <li>[2026.03] <strong>CodeAlign</strong> (<a href="https://arxiv.org/pdf/2603.00609">paper</a>) is accepted to <strong>CVPR 2026</strong>, raising an unstudied Modality Isolation scenario in heterogeneous collaborative perception for autonomous driving.</li>
+                    <li>[2025.10] <strong>CoLMDriver</strong> (<a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Liu_CoLMDriver_LLM-based_Negotiation_Benefits_Cooperative_Autonomous_Driving_ICCV_2025_paper.pdf">paper</a>) is accepted to <strong>ICCV 2025</strong>, enabling language-based negotiation and real-time control for cooperative autonomous driving.</li>
+                    <li>[2024.06] <strong>ChatSim</strong> (<a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Wei_Editable_Scene_Simulation_for_Autonomous_Driving_via_Collaborative_LLM-Agents_CVPR_2024_paper.pdf">paper</a>) appears at <strong>CVPR 2024</strong>, supporting editable photo-realistic 3D driving scene simulation via natural language commands.</li>
                   </ul>
                 </td>
               </tr>
@@ -147,12 +202,7 @@
             <tbody>
               <tr>
                 <td style="padding:20px;width:100%;vertical-align:middle">
-                  <heading>📑 Publications</heading>
-                  <p>
-                    See full list in
-                    <a href="https://scholar.google.com.hk/citations?user=MpUEflgAAAAJ&hl=zh-CN">Google Scholar</a>.
-                    Highlighted papers are marked with a light background.
-                  </p>
+                  <heading>&#128196; Publications</heading>
                 </td>
               </tr>
             </tbody>
@@ -170,9 +220,12 @@
                   <div class="tags" data-tags="embodied,agents,vla"></div>
                   Z Lei, <strong>C Liu</strong>, Y Xiong, M Xiong, Y Ding, Z Zhang, W Li, S Chen
                   <br>
-                  <em>arXiv preprint arXiv:2605.13119</em>, 2026
+                  <em>arXiv</em>, 2026
                   <br>
                   <a href="https://arxiv.org/pdf/2605.13119">Paper</a>
+                  <p class="paper-summary">
+                    This work proposes VLAs-as-Tools, where a high-level VLM agent performs temporal reasoning and specialized VLA tools execute local physical operations. It improves the success rate of π<sub>0.5</sub> by 4.8 points on LIBERO-Long and 23.1 points on RoboTwin, with a 15.0-point gain in invocation fidelity.
+                  </p>
                 </td>
               </tr>
 
@@ -185,9 +238,12 @@
                   <div class="tags" data-tags="perception,cv,ad"></div>
                   <strong>C Liu</strong>, Z Chao, S Chen
                   <br>
-                  <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2026
+                  <em>CVPR</em>, 2026
                   <br>
                   <a href="https://arxiv.org/pdf/2603.00609">Paper</a>
+                  <p class="paper-summary">
+                    CodeAlign studies modality isolation, where heterogeneous agents with different modalities never co-occur during training, and aligns them through feature-code-feature translation. It uses only 8% of prior alignment parameters, reduces communication by 1024x, and reaches state-of-the-art results on OPV2V and DAIR-V2X.
+                  </p>
                 </td>
               </tr>
             </tbody>
@@ -205,9 +261,12 @@
                   <div class="tags" data-tags="llm,agents,ad"></div>
                   <strong>C Liu</strong>, G Liu, Z Wang, J Yang, S Chen
                   <br>
-                  <em>IEEE/CVF International Conference on Computer Vision (ICCV)</em>, 2025
+                  <em>ICCV</em>, 2025
                   <br>
                   <a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Liu_CoLMDriver_LLM-based_Negotiation_Benefits_Cooperative_Autonomous_Driving_ICCV_2025_paper.pdf">Paper</a>
+                  <p class="paper-summary">
+                    CoLMDriver is a full-pipeline LLM-based cooperative driving system that combines critic-feedback negotiation with intention-guided waypoint generation. On the InterDrive benchmark, it achieves an 11% higher success rate across diverse interactive V2V driving scenarios.
+                  </p>
                 </td>
               </tr>
             </tbody>
@@ -225,9 +284,12 @@
                   <div class="tags" data-tags="llm,agents,ad"></div>
                   Y Wei, Z Wang, Y Lu, C Xu, <strong>C Liu</strong>, H Zhao, S Chen, Y Wang
                   <br>
-                  <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2024
+                  <em>CVPR</em>, 2024
                   <br>
                   <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Wei_Editable_Scene_Simulation_for_Autonomous_Driving_via_Collaborative_LLM-Agents_CVPR_2024_paper.pdf">Paper</a>
+                  <p class="paper-summary">
+                    ChatSim enables editable photo-realistic 3D driving scene simulation from natural language commands by coordinating LLM agents, multi-camera NeRF rendering, and scene-consistent digital assets. Experiments on Waymo Open Dataset show it can handle complex language commands and generate corresponding photo-realistic scene videos.
+                  </p>
                 </td>
               </tr>
             </tbody>
@@ -245,9 +307,12 @@
                   <div class="tags" data-tags="ad,cv"></div>
                   K Jin, H Wang, <strong>C Liu</strong>, Y Zhai, L Tang
                   <br>
-                  <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2022
+                  <em>ICRA</em>, 2022
                   <br>
                   <a href="https://ieeexplore.ieee.org/abstract/document/9812411/">Paper</a>
+                  <p class="paper-summary">
+                    This paper develops a GNN-based relation learning network to detect abnormal perception information by modeling spatiotemporal relations among surrounding dynamic objects and scene context. Experiments in CARLA demonstrate effectiveness across multiple scenarios and scalability to unseen cases.
+                  </p>
                 </td>
               </tr>
             </tbody>
@@ -257,7 +322,7 @@
             <tbody>
               <tr>
                 <td style="padding:20px;width:100%;vertical-align:middle">
-                  <heading>🎓 Educations</heading>
+                  <heading>&#127891; Educations</heading>
                 </td>
               </tr>
             </tbody>
@@ -300,7 +365,7 @@
             <tbody>
               <tr>
                 <td>
-                  <heading>🥇 Honors & Awards</heading>
+                  <heading>&#129351; Honors & Awards</heading>
                 </td>
               </tr>
             </tbody>
@@ -322,7 +387,7 @@
             <tbody>
               <tr>
                 <td>
-                  <heading>👀 Misc</heading>
+                  <heading>&#128064; Misc</heading>
                 </td>
               </tr>
             </tbody>
@@ -333,6 +398,25 @@
               <tr>
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <strong>Reviewer</strong>: ECCV, CVPR, ICCV, ICLR
+                  <br>
+                  <strong>Life</strong>: I love playing basketball and traveling.
+                  <div class="visitor-widgets">
+                    <div class="map-widget">
+                      <strong>Map</strong>
+                      <iframe
+                        title="Shanghai Jiao Tong University map"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=121.4140%2C31.0170%2C121.4540%2C31.0370&amp;layer=mapnik&amp;marker=31.0270%2C121.4340">
+                      </iframe>
+                    </div>
+                    <div class="pageviews-widget">
+                      <strong>Pageviews</strong>
+                      <p>
+                        <img src="https://hits.sh/cxliu0314.github.io.svg?style=flat-square&amp;label=Pageviews&amp;color=1772d0" alt="pageviews">
+                      </p>
+                    </div>
+                  </div>
                 </td>
               </tr>
             </tbody>
@@ -345,6 +429,9 @@
                   <br>
                   <p style="text-align:left;font-size:small;">
                     Last Update: 2026.05.
+                  </p>
+                  <p style="text-align:right;font-size:small;">
+                    Derived from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's website</a>.
                   </p>
                 </td>
               </tr>
